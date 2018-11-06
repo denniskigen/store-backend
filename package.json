@@ -1,0 +1,38 @@
+{
+  "name": "store-backend",
+  "version": "1.0.0",
+  "description": "A simple NodeJS API for a store to keep track of information related to customers, orders and items ",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Dennis Kigen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jest-cli": "^23.6.0",
+    "mysql2": "^1.6.1",
+    "nodemon": "^1.18.5",
+    "sequelize": "^4.41.0",
+    "sequelize-cli": "^5.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jest": "^23.6.0",
+    "mocha": "^5.2.0",
+    "sequelize-test-helpers": "^1.0.6",
+    "sinon": "^7.1.1",
+    "sinon-chai": "^3.2.0",
+    "sinon-express-mock": "^2.1.0",
+    "supertest": "^3.3.0"
+  },
+  "jest": {
+    "coverageReporters": [
+      "html", "text"
+    ],
+    "collectCoverageFrom": [
+      "**/__tests/**"
+    ]
+  }
+}

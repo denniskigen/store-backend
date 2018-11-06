@@ -1,0 +1,165 @@
+{
+  "all": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 1,
+            "first_name": "John",
+            "last_name": "Doe",
+            "phone": "0700000000"
+          }, {
+            "id": 2,
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "phone": "0711111111"
+          }, {
+            "id": 3,
+            "first_name": "Ann",
+            "last_name": "Other",
+            "phone": "0722222222"
+          }
+        ]
+      }
+    }
+  },
+  "single": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        } 
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 1,
+            "first_name": "John",
+            "last_name": "Doe",
+            "phone": "0700000000"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Customer not found"
+      }
+    }
+  },
+  "add": {
+    "success": {
+      "res": {
+        "statusCode": 201,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "first_name": "Ennie",
+            "last_name": "Wan",
+            "phone": "0723333333"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 400,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Something went wrong."
+      }
+    }
+  },
+  "update": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "first_name": "Sam",
+            "last_name": "Body",
+            "phone": "0734444444"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Customer not found"
+      }
+    }
+  },
+  "delete": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "first_name": "Sam",
+            "last_name": "Body",
+            "phone": "0734444444"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Customer not found"
+      }
+    }
+  }
+}

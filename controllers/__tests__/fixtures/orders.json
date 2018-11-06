@@ -1,0 +1,151 @@
+{
+  "all": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 1,
+            "order_date": "2019-01-01"
+          }, {
+            "id": 2,
+            "order_date": "2019-10-01"
+          }, {
+            "id": 3,
+            "order_date": "2019-11-11"
+          }
+        ]
+      }
+    }
+  },
+  "single": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        } 
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 1,
+            "order_date": "2019-01-01"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Order not found"
+      }
+    }
+  },
+  "add": {
+    "success": {
+      "res": {
+        "statusCode": 201,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "order_date": "2019-11-13"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 400,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Something went wrong."
+      }
+    }
+  },
+  "update": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "order_date": "2019-11-13"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Order not found"
+      }
+    }
+  },
+  "delete": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "order_date": "2019-11-13"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Order not found"
+      }
+    }
+  }
+}
