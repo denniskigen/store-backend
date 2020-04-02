@@ -14,7 +14,7 @@
     "jest-cli": "^23.6.0",
     "mysql2": "^1.6.1",
     "nodemon": "^1.18.5",
-    "sequelize": "^4.41.0",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^5.2.0"
   },
   "devDependencies": {
